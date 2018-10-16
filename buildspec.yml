@@ -3,7 +3,7 @@ phases:
  install:
    commands:
      - | 
-         aws s3 cp s3://elasticbeanstalk-us-east-1-281094676178/rocketpost/auth.json ./
+        #  aws s3 cp s3://elasticbeanstalk-us-east-1-281094676178/rocketpost/auth.json ./
          export DEBIAN_FRONTEND=noninteractive
          #Install php7.1
          apt-get update
@@ -38,9 +38,9 @@ phases:
          #npm install -g gulp
          #npm install -g grunt
          #npm install -g webpack
-     # Start Mysql if you need it
-     # - apt-get install -y mysql-server
-     # - su mysql -s /bin/bash -c "/usr/sbin/mysqld" &
+    #  Start Mysql if you need it
+     - apt-get install -y mysql-server
+     - su mysql -s /bin/bash -c "/usr/sbin/mysqld" &
  build:
    commands:
      - echo Build started on `date`
@@ -52,6 +52,5 @@ phases:
      - echo Build completed on `date`
      # Do you need to do this? In many cases phpunit will use sqllite or similar to avoid the need for a real DB.
      # If you don't need it delete it
-     # - /usr/bin/mysql  -u root -e "GRANT ALL ON *.* TO 'test'@'localhost' IDENTIFIED BY '' WITH GRANT OPTION"
-     # - mysqladmin -u test create test
+    - /usr/bin/mysql  -u root -e "CREATE DATABASE rp;"
      - ./vendor/bin/phpunit
