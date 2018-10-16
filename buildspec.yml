@@ -10,7 +10,7 @@ phases:
          LC_ALL=C.UTF-8 add-apt-repository -y ppa:ondrej/php
          apt-get update
          # Install PHP
-         apt-get install -y php7.1\
+         apt-get install -y php7.1 \
                   php7.1-ldap \
                   php7.1-xml \
                   php7.1-xmlrpc \
