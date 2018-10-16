@@ -16,7 +16,6 @@ phases:
                   php7.1-xmlrpc \
                   php7.1-zip \
                   php7.1-mysql \
-                  php7.1-mbstring \
                   php7.1-mcrypt \
                   php7.1-gd \
                   php7.1-readline \
@@ -25,7 +24,8 @@ phases:
                   php7.1-dom \
                   php-xdebug \
                   php7.1-curl \
-                  unzip
+                  unzip \
+                  ext-mbstring
          #Enable xdebug - phpunit uses this for code coverage
          phpenmod xdebug
          #Install composer
