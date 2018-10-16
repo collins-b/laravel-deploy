@@ -2,7 +2,8 @@ version: 0.2
 phases:
  install:
    commands:
-     - |
+     - | 
+         aws s3 cp s3://elasticbeanstalk-us-east-1-281094676178/rocketpost/auth.json ./
          export DEBIAN_FRONTEND=noninteractive
          #Install php7.1
          apt-get update
