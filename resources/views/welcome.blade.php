@@ -81,7 +81,8 @@
                 <div class="title m-b-md">
                     Laravel
                     <p>Successful CD - testing stuff!<p>
-                    <b>testing stuff!<b>
+                    <b>testing stuff!</b>
+                    <b>Further!</b>
                 </div>
 
                 <div class="links">
