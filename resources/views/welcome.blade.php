@@ -80,7 +80,8 @@
             <div class="content">
                 <div class="title m-b-md">
                     Laravel
-                    <p>Successful CD<p>
+                    <p>Successful CD - testing stuff!<p>
+                    <b>testing stuff!<b>
                 </div>
 
                 <div class="links">
